@@ -1,0 +1,81 @@
+# [START kubernetes_deployment]
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: polls
+  labels:
+    app: polls
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: polls
+  template:
+    metadata:
+      labels:
+        app: polls
+    spec:
+      containers:
+      - name: polls-app
+        image: gcr.io/mbicycle/polls
+        imagePullPolicy: Always
+        env:
+        # [START cloudsql_secrets]
+            - name : DATABASE_USER
+              value: 'postgres'
+            - name : DATABASE_PASSWORD
+              value: 'gd0d469SS'
+            - name : DATABASE_NAME
+              value: 'postgres'
+            - name : DATABASE_HOST
+              value: '127.0.0.1'
+            - name : DATABASE_PORT
+              value: '5432'
+            # [END cloudsql_secrets]
+        ports:
+        - containerPort: 80
+
+      # [START proxy_container]
+      - image: gcr.io/cloudsql-docker/gce-proxy:1.16
+        name: cloudsql-proxy
+        command: ["/cloud_sql_proxy", "--dir=/cloudsql",
+        "-instances=mbicycle:europe-west1:hello-postgres3=tcp:5432",
+                  "-credential_file=/secrets/cloudsql/credentials.json"]
+        volumeMounts:
+          - name: cloudsql-oauth-credentials
+            mountPath: /secrets/cloudsql
+            readOnly: true
+          - name: ssl-certs
+            mountPath: /etc/ssl/certs
+          - name: cloudsql
+            mountPath: /cloudsql
+      # [END proxy_container] 
+      # [START volumes]
+      volumes:
+        - name: cloudsql-oauth-credentials
+          secret:
+            secretName: cloudsql-oauth-credentials
+        - name: ssl-certs
+          hostPath:
+            path: /etc/ssl/certs
+        - name: cloudsql
+          emptyDir: {}
+      # [END volumes]        
+# [END kubernetes_deployment]
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: polls
+  labels:
+    app: polls
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: polls
+# [END service]

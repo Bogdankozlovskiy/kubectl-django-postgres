@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mbicycle",
+  "private_key_id": "0a84a027d56c557a35f642095b6379fd7445cdd4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC2QmCGOiC3P0wF\nfykXRzwaf01bWEJl7BrDMd48IFQmMgc5ywf0MdQQFhBwxfNZgrRL9VLzzpwKpI6R\nTDmESdG0GoevxyT/zwmFipGD4uGPxqRtmfvwLEdEKDkiw62+Ll/NTV0jCOCkev2k\nmvAUmWKDHS8+UifJ31DbpyneSyU0u7EszqQhF89t0J+SA1qlWYGSF7JTki2lB6Bc\nPKh1xaSjB4KTmo688xpjmPJgd9DHAia1sKkDTLZ5HXMmSrzEcdgYVFCgGpJAKFNo\nc09xs1SMhEFZw07PypQuFUhp4fPbjYY5DMKNxGUpuvyn/f3Ij6/FQt7qdkpWPCaa\nhJboZVZPAgMBAAECggEAL17SKqDqBua3MgiKXAgCOZrTtsWaQFZc4FXSPotig6jm\nEuHPt+rJhMLPVBhG9wFPLhzdigutp+B8Q4xtuJHdJLPuh0O5vJkJjwFkb8RkvtMw\nwmHOxu4jObZAn2X/ftobwUb1yZjRlj53NTSl6JyzK4PG1ypQOBpIMEbizWl3ipw7\nTdmhTYmCvaRZDFEOH43q8KFUJYecLhZH4hZpCUAnrpiAIBKZnbQ+oyukb/49SAPv\nF840LWEmk4jyEIZxViGLNhVqfxPxCY0ldylonbBYE7lQEn1BxImdKINqEmy9Alet\naX5Kfj5ajnv30xAkgExNRJLvLmezVDm0nHZduhnYkQKBgQDoHMlLf/suuaSbSCN6\nTRX3SzcFXJIKA5no7IxT4ojroxlJN3wnNgucjt2T9jM5cZPaHpBGJifvVtnn//uQ\nKW+CN9jkqofdwAuJj7Crflly74BFPusURi5F2hg5mMyl8rSGK5lr+7buUVy5ZNsy\n+TWOD/FOcydwx/wJXEq94gMCHwKBgQDJBCnwpbLTUeMZhboOZm+Nopq30Wx1g6YX\nb/R0tnKgPD9e9jmRHaBzasG7aALKBf2hj9ckQDvbGti6v2GzJ0NzrYnonn6pclIF\ni61qPpaBUAuOGBMGzXYyS/RNVUhxNFYo3J4anlVxLn4iksDtt1iLi7rRShgriJlU\nftRQqloF0QKBgAgYqPTXO/2/P/yioYoski2UFBE9z2JGCeJUDfkHF9uQTtt88fm0\nKueFHDmDBvpj+dJL6qBnyFDS6Lrs9OtsZpVWOVyQjjiv8DcWKgVxXNFjhUflD/If\nGJIbL2ki6VCIjL95WdqoZxMdB2z4FaVLiBCygapI3gFTGHmDHKBO9+flAoGAfVOX\nQm5Mm+wGBzeU1L2Q92FVzR1I3cuClkI6yzmlJbnqWK5zHcK28r6wosMqWgJ6K2ye\n2f8iUmzeizAfHa9xIoIj5WBL4CFiegqnyAHVnDHnwmPIGQmok5s/aaeuTsYuobNK\n75Wf97zg73VHy+3vyrEHfM0RXLMBxeh9Pv22usECgYB5s0vRZN9IkJMUNVG3KnsZ\nnHdMe3ycEpDh6n0GnrcdYfgP4be/Z++owM0lDFKsLHclXTZ1WkDC8VSzgZyg8bUW\n03c3Mj3+j+IBHEiXhaLr+HkQuwR7EcbQPk10NYwIf4BjHss2qOSJySoydnYBgnrt\nLE+8Gy/Y6oxG1P/D/+QA+w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "bogdan-accaunt@mbicycle.iam.gserviceaccount.com",
+  "client_id": "102697775541052681641",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bogdan-accaunt%40mbicycle.iam.gserviceaccount.com"
+}
